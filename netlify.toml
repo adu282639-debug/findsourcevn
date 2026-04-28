@@ -1,3 +1,7 @@
 [build]
-  command = "npm install --legacy-peer-deps --force && npm run build"
+  command = "npm install --legacy-peer-deps --force && ./node_modules/.bin/react-scripts build"
   publish = "build"
+
+[build.environment]
+  CI = "false"
+  NODE_VERSION = "18"
