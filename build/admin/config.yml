@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: adu282639-debug/findsourcevn
+  branch: main
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: blog
+    label: Blog
+    folder: src/content/blog
+    create: true
+    fields:
+      - { label: Tiêu đề, name: title, widget: string }
+      - { label: Ngày đăng, name: date, widget: datetime }
+      - { label: Nội dung, name: body, widget: markdown }
